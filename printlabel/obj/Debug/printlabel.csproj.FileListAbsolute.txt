@@ -1,0 +1,16 @@
+D:\Project\printlabel\printlabel\bin\Debug\printlabel.exe.config
+D:\Project\printlabel\printlabel\bin\Debug\printlabel.exe
+D:\Project\printlabel\printlabel\bin\Debug\printlabel.pdb
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.csproj.AssemblyReference.cache
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.csproj.SuggestedBindingRedirects.cache
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.Form1.resources
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.Properties.Resources.resources
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.csproj.GenerateResource.cache
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.csproj.CoreCompileInputs.cache
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.exe
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.pdb
+D:\Project\printlabel\printlabel\bin\Debug\zxing.dll
+D:\Project\printlabel\printlabel\bin\Debug\zxing.presentation.dll
+D:\Project\printlabel\printlabel\bin\Debug\zxing.xml
+D:\Project\printlabel\printlabel\bin\Debug\zxing.presentation.xml
+D:\Project\printlabel\printlabel\obj\Debug\printlabel.csproj.CopyComplete
