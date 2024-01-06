@@ -12,6 +12,7 @@ namespace printlabel
     {
         HttpListener listener;
         private PrintDocument printDocument;
+      private string targetPrinterName = "TSC MB340T";
         public Form1()
         {
             InitializeComponent();
@@ -19,6 +20,7 @@ namespace printlabel
             listener.Prefixes.Add("http://localhost:4555/");
             printDocument = new PrintDocument();
             printDocument.PrintPage += PrintDocument_PrintPage;
+            printDocument.PrinterSettings.PrinterName = targetPrinterName;
         }
 
         private void btn_start_server_Click(object sender, EventArgs e)
@@ -56,6 +58,7 @@ namespace printlabel
 
         private void gen_barcode_print_Click(object sender, EventArgs e)
         {
+            
             // Generate barcode data (e.g., a sample text)
             string barcodeData = "123456789";
 
@@ -73,15 +76,15 @@ namespace printlabel
 
             // Show the PrintDialog to select the printer
             PrintDialog printDialog = new PrintDialog();
-            if (printDialog.ShowDialog() == DialogResult.OK)
-            {
+            //if (printDialog.ShowDialog() == DialogResult.OK)
+            //{
                 // Set the printer to the selected printer
                 printDocument.PrinterSettings.PrinterName = printDialog.PrinterSettings.PrinterName;
 
                 // Print the document
                 //printDocument.Print();
                 printDocument.Print();
-            }
+            //}
 
 
         }
