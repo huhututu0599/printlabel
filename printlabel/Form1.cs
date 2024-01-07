@@ -12,15 +12,15 @@ namespace printlabel
     {
         HttpListener listener;
         private PrintDocument printDocument;
-      private string targetPrinterName = "TSC MB340T";
+        //private string targetPrinterName = "Adobe PDF";
         public Form1()
         {
             InitializeComponent();
             listener = new HttpListener();
-            listener.Prefixes.Add("http://localhost:4555/");
+            listener.Prefixes.Add("http://192.168.0.110:4555/");
             printDocument = new PrintDocument();
             printDocument.PrintPage += PrintDocument_PrintPage;
-            printDocument.PrinterSettings.PrinterName = targetPrinterName;
+           // printDocument.PrinterSettings.PrinterName = targetPrinterName;
         }
 
         private void btn_start_server_Click(object sender, EventArgs e)
@@ -42,6 +42,7 @@ namespace printlabel
                     string content = reader.ReadToEnd();
                     // 在这里处理POST数据
                     Console.WriteLine(content);
+                    PrintAndGenerate(content);
                 }
             }
 
@@ -58,9 +59,14 @@ namespace printlabel
 
         private void gen_barcode_print_Click(object sender, EventArgs e)
         {
-            
+            PrintAndGenerate("67228sss");
+
+        }
+
+        private void PrintAndGenerate(String x1)
+        {
             // Generate barcode data (e.g., a sample text)
-            string barcodeData = "123456789";
+            string barcodeData = x1;
 
             // Create an instance of BarcodeWriter
             BarcodeWriter barcodeWriter = new BarcodeWriter();
@@ -78,15 +84,13 @@ namespace printlabel
             PrintDialog printDialog = new PrintDialog();
             //if (printDialog.ShowDialog() == DialogResult.OK)
             //{
-                // Set the printer to the selected printer
-                printDocument.PrinterSettings.PrinterName = printDialog.PrinterSettings.PrinterName;
+            // Set the printer to the selected printer
+            printDocument.PrinterSettings.PrinterName = printDialog.PrinterSettings.PrinterName;
 
-                // Print the document
-                //printDocument.Print();
-                printDocument.Print();
+            // Print the document
+            //printDocument.Print();
+            printDocument.Print();
             //}
-
-
         }
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)

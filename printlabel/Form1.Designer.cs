@@ -37,9 +37,9 @@
             // 
             // btn_start_server
             // 
-            this.btn_start_server.Location = new System.Drawing.Point(145, 43);
+            this.btn_start_server.Location = new System.Drawing.Point(293, 69);
             this.btn_start_server.Name = "btn_start_server";
-            this.btn_start_server.Size = new System.Drawing.Size(75, 23);
+            this.btn_start_server.Size = new System.Drawing.Size(75, 28);
             this.btn_start_server.TabIndex = 0;
             this.btn_start_server.Text = "button1";
             this.btn_start_server.UseVisualStyleBackColor = true;
@@ -47,24 +47,24 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(22, 43);
+            this.textBox1.Location = new System.Drawing.Point(22, 76);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.Size = new System.Drawing.Size(242, 21);
             this.textBox1.TabIndex = 1;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(22, 132);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 154);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 125);
+            this.pictureBox1.Size = new System.Drawing.Size(449, 125);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // gen_barcode_print
             // 
-            this.gen_barcode_print.Location = new System.Drawing.Point(145, 85);
+            this.gen_barcode_print.Location = new System.Drawing.Point(396, 69);
             this.gen_barcode_print.Name = "gen_barcode_print";
-            this.gen_barcode_print.Size = new System.Drawing.Size(75, 23);
+            this.gen_barcode_print.Size = new System.Drawing.Size(75, 28);
             this.gen_barcode_print.TabIndex = 3;
             this.gen_barcode_print.Text = "button1";
             this.gen_barcode_print.UseVisualStyleBackColor = true;

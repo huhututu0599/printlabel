@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bda1b307-e35a-4418-9fcf-c3c422d29002": {
+      "ProjectGuid": "bda1b307-e35a-4418-9fcf-c3c422d29002",
+      "DisplayName": "printlabel",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
